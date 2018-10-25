@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	  div{
+		  width:200px;
+			height:200px;
+			position:absolute;
+      left:0;
+			top:0;
+		}
+		#d1{
+		  background:blue;
+		}
+		#d2{
+		  background:yellow;
+			/*transform:translate(100px,100px);*/
+			/*将原点改到左上角位置*/
+			transform-origin:left top;
+
+		}
+     #d2:hover{
+		  transform:scale(1.1,2) rotate(-30deg);
+		 }
+	</style>
+ </head>
+ <body>
+		<div id="d1">参考元素</div>
+		<div id="d2">转换元素</div>
+ </body>
+</html>
